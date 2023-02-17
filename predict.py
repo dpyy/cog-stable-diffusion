@@ -17,7 +17,7 @@ from diffusers.pipelines.stable_diffusion.safety_checker import (
 )
 
 
-MODEL_ID = "dpyy/cog-stable-diffusion"
+MODEL_ID = "prompthero/openjourney"
 MODEL_CACHE = "diffusers-cache"
 SAFETY_MODEL_ID = "CompVis/stable-diffusion-safety-checker"
 
