@@ -32,6 +32,8 @@ class Predictor(BasePredictor):
             cache_dir=MODEL_CACHE,
             local_files_only=True,
         ).to("cuda")
+        
+        self.pipe.safety_checker = lambda images, clip_input: (images, False)
 
     @torch.inference_mode()
     def predict(
